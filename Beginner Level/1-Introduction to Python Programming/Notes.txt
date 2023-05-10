@@ -1,0 +1,21 @@
+Notes about Python
+
+    Python code is executed line by line from top to bottom, similar to most other programming languages.
+
+    Python uses whitespace (indentation) to define blocks of code instead of curly braces like other programming languages.
+
+    Semicolons (;) are not required to end statements in Python, but can be used to separate statements on the same line.
+
+    If multiple variables have the same name, the last assignment will be the one used when the variable is referenced.
+
+    Python is an interpreted language, meaning that the code is not compiled to machine code before execution, but rather translated and executed at runtime.
+
+    Python is dynamically typed, meaning that the type of a variable is determined at runtime, based on the value it is assigned.
+
+    Python supports object-oriented programming (OOP) concepts like inheritance, encapsulation, and polymorphism.
+
+    Python has a large standard library with many useful modules for tasks like working with files, networking, web development, scientific computing, and more.
+
+    Python is an open-source language, and has a large and active community of developers contributing to its development and ecosystem.
+
+    Python is widely used in a variety of fields including data science, machine learning, web development, scientific computing, and more.
