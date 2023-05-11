@@ -12,28 +12,8 @@ and celsius_to_fahrenheit(100) should return 212.0.
 
 #Template
 
+def celsius_to_fahrenheit(c):
+    return((c*9/5)+32)
 
-
-
-
-
-
-
-
-
-
-
-
-
-"""    
-
-def celsius_to_fahrenheit(celsius):
-    #formula
-    return formula
-
-print()   # Output: 32.0
-print() # Output: 212.0
-
-
-"""
-
+print(celsius_to_fahrenheit(0))
+print(celsius_to_fahrenheit(100))
