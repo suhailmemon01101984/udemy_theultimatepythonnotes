@@ -10,17 +10,8 @@ to a file called "results.txt" in the following format:
 The result is: result
 '''
 
-
-#Template
-
-# Prompt the user to enter two numbers
-
-
-# Perform the calculation
-
-# Write the result to a file
-with open("results.txt", "w") as file:
-    file.write(str(result))
-
-# Print the result to the console
-
+num1=input('please enter first number: ')
+num2=input('please enter second number: ')
+result=float(num1) + float(num2)
+with open('results.txt','w') as f:
+    f.write('The result is: '+ str(result))

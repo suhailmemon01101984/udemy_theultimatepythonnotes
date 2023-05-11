@@ -16,16 +16,15 @@ z is of type <class 'str'>
 
 '''
 
-#Template
+def check_types(x,y,z):
+    print("x is of type ",type(x))
+    print("y is of type ", type(y))
+    print("z is of type ", type(z))
+    if(type(x)==type(y)==type(z)):
+        return True
+    else:
+        return False
 
-def check_types(x, y, z):
-    """
-    Returns the data types of the arguments x, y, and z.
-    """
-    return (type(x), type(y), type(z))
+bool_value=check_types(1,2,3)
 
-
-# Call the function with some values
-
-
-# Print the result
+print(bool_value)
