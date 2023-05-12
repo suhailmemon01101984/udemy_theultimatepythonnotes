@@ -19,13 +19,14 @@ We can do this by iterating over the array and keeping track of the maximum
 element we have seen so far. At the end of the loop, we return the maximum element.
 '''
 
-#Template
+def find_max(arr):
+    max_element=arr[0]
+    for num in arr:
+       if max_element<num:
+           max_element = num
+    return(max_element)
 
-def find_max(numbers):
-    # Your code goes here
-    pass
-
-# Test the function
 print(find_max([5, 3, 8, 1, 9]))
 print(find_max([4, 7, 2, 6, 1]))
 print(find_max([-2, 0, 3, -1, 5]))
+

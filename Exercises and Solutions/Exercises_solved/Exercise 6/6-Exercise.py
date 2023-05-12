@@ -7,17 +7,12 @@
  If x and y are equal, print "x is equal to y".
 '''
 
-#Template
+x=int(input("Please enter value of x: "))
+y=int(input("Please enter value of y: "))
 
-#Take User Input
-x = int(input("Enter x: "))
-y = int(input("Enter y: "))
-
-#Ifm elif and else statements
-
-# if x > y:
-# elif x == y:
-# else:
-    
-
-
+if(x>y):
+    print("x is greater than y")
+elif(y>x):
+    print("y is greater than x")
+else:
+    print("x is equal to y")
