@@ -19,7 +19,7 @@ This method returns a string that describes the Rectangle object, including its 
 In the example code, a new Rectangle object r1 is created with a width of 5 and a height of 10. 
 The area(), perimeter(), and __str__() methods are then called on the r1 object and the output is printed to the console.
 
-'''
+
 class Rectangle:
     def __init__(self, width, height):
         self.width = width
@@ -40,3 +40,24 @@ r1 = Rectangle(5, 10)
 print(r1.area())  # Output: 50
 print(r1.perimeter())  # Output: 30
 print(r1)  # Output: Rectangle with width 5 and height 10
+'''
+
+# define a class rectangle that takes in 2 parameters: width and height
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    # add functions to the class that calculate the area and the perimeter
+    def area(self):
+        return self.width * self.height
+
+    def perimeter(self):
+        return 2 * (self.width + self.height)
+
+# create an object of the class rectangle with height as 34 and width as 15
+rect = Rectangle(15, 34)
+
+# print the area and the perimeter of this rectangle
+print("Area:", rect.area())
+print("Perimeter:", rect.perimeter())
