@@ -20,19 +20,23 @@ Here's an outline of the program:
 
 import random
 list_of_words=["constantine","coconut","americano","espresso"]
-number_of_guesses_ind=0
+number_of_guesses_left=3
+number_of_guesses_done=0
 game_finish_ind=0
+index=random.randint(0,3)
+random_word=list(list_of_words[index])
+random.shuffle(random_word)
+jumbled_word=''.join(random_word)
 
-while game_finish_ind==0:
-    index=random.randint(0,3)
-    random_word=list(list_of_words[index])
-    random.shuffle(random_word)
-    jumbled_word=''.join(random_word)
-    guessed_word=input(f"The jumbled word is: {jumbled_word}. Please guess the original word: ")
-    number_of_guesses_ind = number_of_guesses_ind + 1
+while game_finish_ind==0 and number_of_guesses_left>0:
+    guessed_word=input(f"The jumbled word is: {jumbled_word}. Please guess the original word you have {number_of_guesses_left} guesses: ")
+    number_of_guesses_left = number_of_guesses_left - 1
+    number_of_guesses_done=number_of_guesses_done+1
     if(guessed_word==list_of_words[index]):
-        print(f"Congratulations, you are correct! It took you {number_of_guesses_ind} guesses to win!")
+        print(f"Congratulations, you are correct! It took you {number_of_guesses_done} guesses to win!")
         game_finish_ind=1
+    elif number_of_guesses_left==0:
+        print(f"Sorry, bad guess. You have run out of guesses. The original word is: {list_of_words[index]}")
     else:
         print("Sorry, bad guess. Please try again")
 
