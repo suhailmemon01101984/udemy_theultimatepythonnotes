@@ -29,3 +29,13 @@ Enter a string: A man, a plan, a canal: Panama!
 
 
 '''
+import re
+str=input("Please enter a string: ")
+str_lowercase=str.lower()
+str_lowercase_punct_replaced=re.sub(r"""[,.'?!-(){}:;@#&$ ]+\ *""","",str_lowercase)
+str_lowercase_punct_replaced_reversed=str_lowercase_punct_replaced[::-1]
+
+if str_lowercase_punct_replaced==str_lowercase_punct_replaced_reversed:
+    print("The string is a Palindrome!!")
+else:
+    print("The string is not a Palindrome")
