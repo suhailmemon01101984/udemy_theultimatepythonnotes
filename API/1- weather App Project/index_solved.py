@@ -1,6 +1,6 @@
 import requests
 import json
-api_key = '69faef5a3baa275f5a8448c77f9ddc50'
+api_key = '69faef5a3baa275f5a8448c77f9ddc50_suhail'
 city = 'New York'
 units = 'imperial'
 api_url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&units={units}&appid={api_key}'

@@ -7,7 +7,7 @@ api_endpoint = 'https://www.alphavantage.co/query'
 params = {
     'function': 'TIME_SERIES_DAILY_ADJUSTED',
     'symbol': 'AAPL',
-    'apikey': 'YOUR_API_KEY_HERE'
+    'apikey': '80QMYFRTXCVPRYBK'
 }
 
 # Send the request to the API
