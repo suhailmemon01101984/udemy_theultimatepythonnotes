@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 function="TIME_SERIES_DAILY_ADJUSTED"
 symbol="AAPL"
-apikey="80QMYFRTXCVPRYBK"
+apikey="80QMYFRTXCVPRYBK_suhail"
 
 # Define the API endpoint and parameters
 api_url = f'https://www.alphavantage.co/query?function={function}&symbol={symbol}&apikey={apikey}'
